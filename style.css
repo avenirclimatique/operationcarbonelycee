@@ -1,0 +1,767 @@
+/*=============  generalités  ============ */
+/*============================================================== */
+/*=============  - POLICE   ============ */
+* {
+	/*font-family: verdana, arial, sans-serif;*/
+	font-family: Verdana, Arial, Helvetica,  sans-serif;
+	color: black;
+	line-height:1.4;
+}
+/*===========  STRUCTURE GENERALE DE LA PAGE ================ */
+/*============= 1 - PRESENTATION DANS BANDEAU SUPERIEUR  utilisée dans le fichier : fonctions_presentation.php ===================== */
+ 
+#titre {
+	padding: 4px 0px 0px 0px; 
+	background-color:#E3EFCE; /*=== couleur du fond d'écran=== */
+	margin: 0px; 
+}
+/*=============== TITRE OCL ====================== */
+#titre h1 {
+	font-size: 200%;
+	margin: 0px ; 
+	padding: 4px 10px 0px 0px;
+}
+#titre h1 a.titre {
+	text-decoration: none; 
+	padding: 0px 0px 0px 0px;
+	color: #97BE0D; 
+}
+/*=============== SOUS-TITRES ==================== */
+#titre h2 {
+	color: #F00A8C;
+	font-size: 100%;
+	margin: 0px ; 
+	padding: 5px 10px 0px 0px;
+}
+#titre h2 a.titre {
+	text-decoration: none; 
+	color: #444454; 
+	padding: 5px 10px 0px 0px;
+}	
+/*===============  ==================== */
+#titre h3{
+	color: grey;
+	font-size: 76%;
+	margin: 0px ; 
+	padding: 5px 10px 0px 0px;
+}
+#titre h3 a.titre {
+	text-decoration: none; 
+	color: grey;
+	padding: 5px 10px 0px 0px;
+}
+#titre h4{
+	color: #958D1D;
+	font-size: 66%;
+	margin: 0px ; 
+	padding: 5px 10px 0px 0px;
+}
+/*=============== 2 - PRESENTATION DES LOGOS  dans le BANDEAU  utilisée dans le fichier : fonctions_presentation.php==================== */
+#titre a.lien_logo {
+	display: block ; 
+	float: right;
+	margin: 0px 10px 0px 10px; 
+	padding: 5px 0px 5px 0px; 
+	text-decoration: none; 
+	text-align: center;	
+
+}
+#titre a.lien_logo_OCL {
+	display: block ; 
+	float: left;
+	margin: 0px 20px 0px 43px; 
+	padding: 10px 8px 7px 0px; 
+	text-decoration: none; 
+	text-align: center;	
+	background-color: white;
+}
+#titre a.lien_logo:hover .nom {
+	background-color: yellow; 
+}
+#titre a.lien_logo img {
+	padding: 0px 0px; 
+	border: none;
+	text-align: center;
+	margin: 0px; 
+}
+#titre a.lien_logo .nom {
+	font-size: 70% ; 
+	margin: 0px; 
+	padding: 0px; 
+	color: white; 
+	text-decoration: underline; 
+	display: block ; 
+	text-align: center;
+}
+/*=============== 2 - PRESENTATION DES LOGOS  dans la colonne de droite seulement sur la page d'accueil ==================== */
+#colonne_droite {
+	float: right; 
+	width: 130px ;	
+	margin: 0px 0px 0px 0px; 
+	font-size: 90%;
+	border-top: 0px solid silver; 
+	border-left: 1px solid silver; 
+	border-right: 0px solid silver;
+	border-bottom: 1px solid silver; 
+	padding: 0px 2px;
+	text-align: center;
+}
+/*==========================================================================================*/
+/*==========================================================================================*/
+/*================== taille et couleur de la colonne principale =======================================================*/
+#principal {
+	margin: 5px 0px 0px 220px ; 
+ 	background-color: white;
+	width: 68%;
+	padding: 3px 5px; 
+	font-size: 83%;
+
+}
+#contour {
+	background-color: white;
+	border-top: 2px solid white ;
+	border-left: 2px solid white; 
+	border-right: 20px solid white;  
+	border-bottom: 20px solid white;  
+}
+/*======================== 1-  TITRES PRINCIPAUX  corps de page ============================== */
+#principal h1 {
+	margin: 0px 0px 5px 0px; 
+	padding: 0px; 
+	font-size: 160%;
+}
+#principal h2 {
+	margin: 0px 0px 5px 0px; 
+	padding: 0px; 
+	color: #F00A8C;
+	font-size: 110%;
+}
+#principal h3 {
+	margin: 0px 0px 5px 0px; 
+	padding: 0px; 
+	color: purple;
+	font-size: 105%;
+
+}
+.border {
+	border-top: 1px dashed black;
+	padding-top: 10px;
+	}
+#principal h4 {
+	margin: 0px 0px 5px 0px; 
+	padding: 0px; 
+	color: black;
+	font-size: 100%;
+}
+
+/*============= 3 - APPARENCE DES LIENS  dans le corps de texte  (pas dans les menus) ============ */
+	/*============= lien    ============ */
+	a:link {
+	color:#8E0D52; 
+	text-decoration:none;
+	}
+	/*============= lien   actif et lien visité  ============ */
+	a:active,a:visited {
+	color:#B50E67; 
+	text-decoration: none;
+	}
+
+	/*============= lien   survolé  ============ */
+	a:hover{
+	color: #758070;
+	text-decoration: underline;
+	background-color : #CCCCCB;
+	}
+/*============= 4 - FOND DE PAGE, bordure droite et gauche  ============ */
+.separateur {
+	clear: both;
+}
+#contour {
+	background-color:	#3D4C4A ; 
+	border-left: 0px;
+	border-right: 0px;
+	}
+/*==========  5- COLONNE CENTRALE  ========  #   id   ==.    class =========================== */
+.colonne_centre 
+{
+	margin: 0px 300px 30px 0px; 
+	border-top: 1px solid green; 
+	width: 98%;
+	font-size:90%;
+	clear: both;
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+.colonne_centre_debut 
+{
+	/*height: 1%;*/
+	margin: 0px 300px 30px 0px; 
+	border-top: 1px solid silver; 
+	width: 98%;
+	font-size:90%;
+	padding-top: 40px;	
+	padding-bottom: 20px;
+}
+.colonne_centre_formulaires 
+{
+	background-color:	#95BBC4 ; 
+	margin: 0px 300px 30px 0px; 
+	width: 98%;
+	font-size:90%;
+	padding-top: 40px;
+}
+.colonne_centre h2
+{
+	text-align : center;
+	color: #F00A8C;
+	margin-top: 30px;
+	background-color: #99CC66;
+}
+/*============= 10 - PRESENTATION DES IMAGES ================== */
+a img /* Toutes les images contenues dans un lien  sans bordure*/
+{
+   border: none; /* Pas de bordure */
+}
+.imagegauche /* image flottante à gauche*/
+{
+   float: left; margin: 20px;
+}
+.imagedroite /* image flottante à gauche*/
+{
+   float: right; margin: 20px;
+}
+.dessous /* pour mise à la ligne d'un paragraphe en-dessous de l'image */
+{
+   clear: both;
+}
+.legende /* légende d'image*/
+{ color: darkgreen;
+font-weight: bold;
+font-style: italic}
+.animation {
+	text-align : center;
+	color: purple;
+	background-color: white;
+	padding: 10px ;
+	margin: 10px;
+	float: right;
+	clear: both;
+		width: 600px;
+ }
+ .diapo {
+	text-align : center;
+	color: purple;
+	width: 600px;
+	background-color: white;
+	padding: 10px ;
+	margin: 10px;
+	float: left;
+	border-top: 1px solid silver;
+	border-left: 1px solid silver;
+	border-bottom: 2px solid silver;
+	border-right: 2px solid silver;
+ 
+ }
+/*=============== 11 - STYLES DE MISE EN VALEUR =============== */
+.fil_ariane {
+	margin: 0px 0px;
+	padding: 0px 10px; 
+	float: left;
+	color: #958D1D; /*=== jaune "foncé"== */
+	font-size: 65%;
+ }
+.span {
+}
+#cit{
+	font-family: Comic Sans MS, Courier New;
+	color: #262F7D;
+	margin-left: 40px;
+	font-weight: normal;
+}
+#black{
+	font-weight: bold;
+	color: black;
+}
+#yellow {
+	color: yellow;
+	font-size: 100%;
+	font-weight: bold;
+	}
+#exemple {
+	font-style: italic;
+	color: darkslategray;
+}
+#green {
+	color: #97BE0D;
+	font-size: 100%;
+	font-weight: bold;
+	}
+#darkgreen {
+	color: #006400;
+	font-size: 100%;
+	padding : 10px;
+	background-color: white;
+	}
+#purple {
+	color: purple;
+	font-size: 100%;
+	font-weight: bold;
+	}
+#pink {
+	color: #F00A8C;
+	font-size: 100%;
+	font-weight: bold;
+	}
+/*================================================= */
+
+
+/*============= 13  - PAGES POSTES DIFFERENCIEES 1 2 3 ==================== */
+
+/*=========================classes pour les div des pages postes ======================== */
+ 
+.comprendre {
+	float: left; 
+	width: 99%;
+	margin: 0% 1% 1% 0%; 
+	padding: 5px; 
+	background-color: #CDC1C1; 
+}
+#comprendre h2 { color: red;padding: 5px; }
+#comprendre h3 { color: green;padding: 5px; }
+#comprendre h4 { color: #F00A8C;padding: 5px; }
+.enqueter {
+	float: left; 
+ 
+	width: 99%;
+	margin: 0% 1% 1% 0%; 
+	padding: 5px; 
+	color: black;
+    background-color: #DDDEDE;
+	}
+.reduire{
+	float: left; 
+ 
+	width: 99%;
+	margin: 0% 1% 1% 0%; 
+	padding: 5px; 
+	text-align: left;
+	color: black;
+	background-color:#EFF0F0;
+	}
+.niveau2 {
+	float: left; 
+	border-top: 1px solid silver; 
+	width: 99%;
+	margin: 0% 0% 0% 0%; 
+	padding: 5px; 
+	background-color:#B2DB8F;
+}	
+niveau2 #h2 {
+	color: yellow;
+	}
+
+li {
+ 
+  
+ list-style-type: square;
+
+} 	
+	
+	
+	
+/*========================= table de différentes classes ==============*/
+ 
+table#etapes_poste {
+	border:1px ;
+	border-collapse:collapse;
+	width:99%;
+	margin:auto;
+	background-color:white;
+}
+caption.etapes_poste {
+	color: red;
+	font-size: bigger;
+	font-weight: bold;
+	}
+.etape1{
+    width: 33%;
+    text-align: center;
+	background-color: #CDC1C1;
+    color: black;
+    padding: 5px 0px;
+	 border:0px ;
+}
+.etape2{
+	width: 33%;
+    text-align: center;
+    background-color: #DDDEDE;
+	color: black;
+	padding: 5px 0px;
+	border:0px ;
+}
+.etape3{
+	width: 33%;
+    text-align: center;
+    background-color:#EFF0F0;
+	color: black;
+	padding: 5px 0px;
+	border:0px ;
+}
+
+/*===== table de classe "FE" =====*/
+table#FE{
+	border:1px solid white;
+	border-collapse:collapse;
+	width:50%;
+	font-family: comic sans ms, courier new;
+	margin:auto;
+	font-size: small;
+	} 
+	table#FE td {
+    padding: 1px;
+    border: solid #000 1px ;
+	}
+	
+caption.FE {
+	border-top: 2px solid black;
+	color: green;
+	font-size: bigger;
+	font-weight: bold;
+	font-family: comic sans ms, courier new;
+	}
+	.num {
+	font-family: comic sans ms, courier new;
+	color :black;
+	text-align: right;
+	padding: 25px 25px 25px 25px;
+	}
+/*===== table de classe "standard" =====*/
+ 
+table#standard{
+	border:1px solid grey;
+	border-collapse:collapse;
+	width:90%;
+	font-family: comic sans ms, courier new;
+	margin:auto;
+	font-size: small;
+	}
+caption.standard {
+	border-top: 2px solid black;
+	color: green;
+	font-size: bigger;
+	font-weight: bold;
+	font-family: comic sans ms, courier new;
+	}
+table#standard td {
+    padding: 5px;
+	width:50%;
+    border: solid #000 1px ;
+}
+.toprow {
+	background-color: #DCDCDC;
+	font-weight: bold;
+	font-family: comic sans ms, courier new;
+	color :black;}
+.data {
+	font-family: comic sans ms, courier new;
+	color : purple;}
+.leftcol {
+	font-family: comic sans ms, courier new;
+	color :black;}
+
+/* ==================================     COULEURS UTILISEES : ==================================================
+vert pour le fond : #97BE0D
+noir : 000
+gris très foncé : #2E2E2E
+gris foncé : #3D4C4A
+gris foncé : #333
+gris moyen: #758070
+gris clair; #CCCCCB
+
+blanc : FFF
+fuschia : #F00A8C
+jaune (fil d'ariane): #FF0
+mauve (lien visité ): #987994
+*/
+/*=============== 6- MENU HORIZONTAL   ==================== */
+/*=============== 6- MENU HORIZONTAL   ==================== */
+/*=============== 6- MENU HORIZONTAL   ==================== */
+/*=============== 6- MENU HORIZONTAL   ==================== */
+#navlist
+{
+
+border-bottom: 0px solid #ccc;
+margin: 0;
+padding-bottom: 1px;
+padding-left: 10px;
+}
+#navlist ul, #navlist li
+{
+display: inline;
+list-style-type: none;
+margin: 0;
+padding: 0;
+}
+/* ================= couleur des boîtes et des liens ============ */
+#navlist a:link, #navlist a:visited
+{
+background: white;
+border: 1px solid #ccc;
+color: #D53C83;
+float: left;
+font-size:75%;
+font-weight: bold;
+line-height: 14px;
+margin-right: 2px;
+padding: 2px 24px 2px 24px;
+text-decoration: none;
+border-top: 1px solid #CCCCCB;
+border-left: 1px solid #CCCCCB;
+border-bottom: 2px solid silver;
+border-right: 2px solid silver;
+}
+#navlist a:link#current, 
+#navlist a:visited#current
+{
+background: #fff;
+border-bottom: 1px solid #fff;
+color: #000;
+}
+#navlist a:hover a:active{ 
+border-top: 1px solid #333;
+border-left: 1px solid #333;
+border-bottom: 1px solid #fff;
+border-right: 1px solid #fff;}
+body.section-1 #navlist li#nav-1 a,
+body.section-2 #navlist li#nav-2 a,
+body.section-3 #navlist li#nav-3 a,
+body.section-4 #navlist li#nav-4 a
+{
+background: #2E2E2E;
+border-bottom: 1px solid #fff;
+color: #000;
+}
+#navlist #subnav-1,
+#navlist #subnav-2,
+#navlist #subnav-3,
+#navlist #subnav-4
+{
+display: none;
+width: 90%;
+}
+body.section-1 #navlist ul#subnav-1,
+body.section-2 #navlist ul#subnav-2,
+body.section-3 #navlist ul#subnav-3,
+body.section-4 #navlist ul#subnav-4
+{
+display: inline;
+left: 10px;
+position: absolute;
+top: 95px;
+}
+body.section-1 #navlist ul#subnav-1 a,
+body.section-2 #navlist ul#subnav-2 a,
+body.section-3 #navlist ul#subnav-3 a,
+body.section-4 #navlist ul#subnav-4 a
+{
+background: #2E2E2E;
+border: none;
+border-left: 1px solid #ccc;
+color: #999;
+font-size: small;
+font-weight: bold;
+line-height: 10px;
+margin-right: 4px;
+padding: 2px 10px 2px 10px;
+text-decoration: none;
+}
+/*===========couleur du lien survolé : boite noire et police fuschia =======*/ 
+#navlist ul a:hover 
+{
+background-color: #2E2E2E;
+color : #F00A8C;
+text-decoration: none;
+  }
+#contents
+{
+background: #758070;
+border: 0px solid #ccc;
+border-top: none;
+clear: both;
+margin: 0px;
+padding: 1px;
+}
+/*===============   =================================== */
+/*=============== 7- MENU VERTICAL   ==================== */
+/*===============    ================================== */
+#navcontainer 
+{ 
+display: block;
+position: fixed;
+margin: 5px 0px; 
+list-style-type: none;
+margin-left: 0px; 
+float: left;
+ }
+#navcontainer ul /*===  boite contenant les boites des rubriques "comprendre", "enqueter..." === */
+{
+clear: both;
+background-position: 0 0;
+list-style-type: none;
+float: left;
+margin: 5px;
+padding: 0;
+}
+
+#navcontainer li /*===  boite contenant les boites des rubriques "comprendre", "enqueter..." === */
+{
+list-style-type: none;
+}
+
+#navcontainer li strong.rubrique   /*===  boite des rubriques "comprendre", "enqueter..."  en vert sur fond blanc === */
+{ 
+clear: both;
+background-position: 0 0;
+float: left;
+display: block;
+padding: 5px 10px;
+list-style-type: none;
+background-color: white;
+width: 140px;
+color: #97BE0D;
+border-bottom: 3px solid #97BE0D;
+border-right: 3px solid #97BE0D;
+font-size: .7em;
+}
+#navcontainer ul li   /*===  boites des éléments du menu === */
+{
+clear: both;
+background-position: 0 0;
+float: left;
+display: block;
+padding: 5px 10px;
+width: 134px;
+background-color: white; /*===  boites en blanc , police gris très foncé=== */
+border-top: 1px solid #fff;
+border-left: 1px solid #fff;
+border-bottom: 2px solid silver;
+border-right: 2px solid silver;
+text-decoration: none;
+font-size: .7em;
+font-weight: bold;
+color: #D53C83;
+}
+
+#navcontainer ul li:link    /*===  lien rose foncé=== */
+{
+color: #D53C83; 
+}
+#navcontainer ul li:visited   /*== boite visitée  === */
+{
+color: #D53C83; 
+background-color: #CCCCCB;
+text-decoration: none;
+border-top: 1px solid #333;
+border-left: 1px solid #333;
+border-bottom: 2px solid #fff;
+border-right: 2px solid #fff;
+background-position: 0 0;
+}
+ /*==vert pour le fond : #97BE0D
+gris très foncé : #2E2E2E
+gris foncé : #3D4C4A
+gris foncé : #333
+gris moyen: #758070
+gris clair; #CCCCCB
+fuschia : #F00A8C
+jaune (fil d'ariane): #FF0
+mauve (lien visité ): #987994== */
+#navcontainer ul a:hover  /*===  boite survolée,  === */
+{
+color: #D53C83; 
+background-color: #2E2E2E; /*couleur derrière le texte survolé*/
+text-decoration: none; 
+background-position: 0 0;
+}
+#navcontainer ul li:hover  /*===  texte de la boite survolée, === */
+{
+color: #D53C83; 
+background-color: #2E2E2E; /* rien pour IE, boite autour du texte survolé pour FF*/
+text-decoration: none;
+border-top: 1px solid #333;
+border-left: 1px solid #333;
+border-bottom: 2px solid #fff;
+border-right: 2px solid #fff;
+background-position: 0 0;
+}
+
+
+#navcontainer a:hover  
+{
+color: #F00;
+background-color: #889E88;
+text-decoration: none;
+
+background-position: 0 0;
+}
+
+#navcontainer ul ul li { margin: 10; background-color: red;}
+
+
+#navcontainer ul ul a:hover
+{
+color: #F00;
+background-color: #889E88;
+text-decoration: none;
+}
+/*================================================= */
+
+/*============= 12 - PIED DE PAGE ==================== */
+/*================================================= */
+#pied {
+	text-align : center;
+	background-color: #99CC66;
+	padding: 5px;
+	margin: 10px 0px 0px 0px;
+	clear: both; 
+	color: black; 
+}
+#principal p.retour_haut_de_page {
+	clear: left;
+	text-align: center;
+	color: black; 
+}
+#pied a {
+	text-decoration: underline;
+	color: black; 
+}
+#pied ul {
+	margin: 0px;
+	padding: 0px;
+	text-align: center;
+}
+#pied ul li {
+	display: inline;
+	list-style: none;
+	margin: 0px 7px 0px 7px;
+	font-size: 100%;
+	color: black; 
+}
+
+
+/* page organisation */
+
+#colonne_centre div.bloc_colonne_centre_large_titre{
+	text-align : center;
+	margin-top: 30px;
+	background-color: #99CC66;
+}
+
+
+/* page ressource */
+#page_ressource h3{
+	text-align : center;
+	color: #F00A8C;
+	margin-top: 30px;
+	background-color: #99CC66;
+}
